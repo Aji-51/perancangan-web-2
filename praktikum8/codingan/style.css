@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+input[type="file"] {
+    padding: 10px;
+}
+
+button {
+    background: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #45a049;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th {
+    background: #4CAF50;
+    color: white;
+    padding: 10px;
+}
+
+td {
+    text-align: center;
+    padding: 10px;
+}
+
+img {
+    width: 120px;
+    border-radius: 5px;
+}
+
+.btn-delete {
+    background: #e60000;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.btn-delete:hover {
+    background: #cc0000;
+}
+
+/* === PAGINATION STYLE === */
+.pagination {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.page-btn {
+    display: inline-block;
+    padding: 8px 15px;
+    margin: 5px;
+    background: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.page-btn:hover {
+    background: #45a049;
+}
+
+.page-btn.active {
+    background: #1e7e34;
+    font-weight: bold;
+    border: 2px solid #0f5f25;
+}
