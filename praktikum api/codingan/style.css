@@ -1,0 +1,104 @@
+/* Reset margin dan padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f7f8;
+  color: #333;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Container form */
+.container {
+  background: white;
+  padding: 25px 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 400px;
+}
+
+/* Judul */
+.container h2 {
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #0d6efd;
+  text-align: center;
+}
+
+/* Label */
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* Input dan select */
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="password"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+input[type="password"]:focus,
+select:focus,
+textarea:focus {
+  border-color: #0d6efd;
+  outline: none;
+}
+
+/* Tombol submit */
+button {
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+  padding: 12px 0;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0b5ed7;
+}
+
+/* Pesan sukses atau error */
+.message {
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 6px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.message.success {
+  background-color: #d1e7dd;
+  color: #0f5132;
+}
+
+.message.error {
+  background-color: #f8d7da;
+  color: #842029;
+}
