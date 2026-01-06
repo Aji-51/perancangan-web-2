@@ -1,0 +1,175 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", "Segoe UI", sans-serif;
+}
+
+/* BODY */
+body {
+    background: #f4f6fb;
+    color: #333;
+}
+
+/* CONTAINER */
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar {
+    width: 260px;
+    background: linear-gradient(180deg, #1e3c72, #2a5298);
+    color: #fff;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+/* MENU */
+.menu {
+    list-style: none;
+    flex: 1;
+}
+
+.menu li a {
+    display: block;
+    padding: 14px 18px;
+    margin-bottom: 12px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.menu li a:hover {
+    background: rgba(255,255,255,0.2);
+    transform: translateX(6px);
+}
+
+/* LOGOUT */
+.logout {
+    text-decoration: none;
+    color: #ffdede;
+    padding: 14px 18px;
+    border-radius: 12px;
+}
+
+.logout:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+/* ===== MAIN ===== */
+.main {
+    flex: 1;
+    padding: 30px;
+}
+
+/* TOPBAR */
+.topbar {
+    background: #fff;
+    padding: 20px 25px;
+    border-radius: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    margin-bottom: 30px;
+}
+
+.topbar h1 {
+    color: #1e3c72;
+    font-size: 22px;
+}
+
+/* ===== CARDS ===== */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-bottom: 35px;
+}
+
+.card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+.card h2 {
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #777;
+    letter-spacing: 1px;
+}
+
+/* CARD COLORS */
+.card.blue h2 { color: #1e88e5; }
+.card.green h2 { color: #43a047; }
+.card.orange h2 { color: #fb8c00; }
+
+/* ===== CONTENT ===== */
+.content {
+    background: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+h3 {
+    margin-bottom: 20px;
+    color: #1e3c72;
+}
+
+/* REPORT */
+.report-box {
+    height: 220px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #e3f2fd, #f8fbff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    font-size: 14px;
+}
+
+/* ===== TABLE ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th {
+    background: #1e3c72;
+    color: #fff;
+    padding: 14px;
+    text-align: left;
+}
+
+table td {
+    padding: 14px;
+    border-bottom: 1px solid #ddd;
+}
+
+table tr:hover {
+    background: #f1f5ff;
+}
